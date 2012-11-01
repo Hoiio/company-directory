@@ -71,4 +71,4 @@ After logging in, use the interface to map your company extensions to phone numb
 
 Test out by calling your Hoiio Number!
 
-![Configure Company Directory](https://github.com/Hoiio/company-directory/tree/master/war/screenshot.png?raw=true)
+![Configure Company Directory](https://raw.github.com/Hoiio/company-directory/master/war/screenshot.png)
