@@ -8,6 +8,8 @@ It requires:
 - [Google App Engine (Java)](https://developers.google.com/appengine/docs/java/) - as a web server
 - [Hoiio Developer Account](http://developer.hoiio.com/) - for telephony IVR API
 
+![Configure Company Directory](https://raw.github.com/Hoiio/company-directory/master/war/screenshot.png)
+
 
 Setup GAE
 ---------
@@ -71,4 +73,17 @@ After logging in, use the interface to map your company extensions to phone numb
 
 Test out by calling your Hoiio Number!
 
-![Configure Company Directory](https://raw.github.com/Hoiio/company-directory/master/war/screenshot.png)
+
+
+
+Tips & Troubleshooting
+------------------------
+
+- Make sure in Eclipse GAE Settings, it is using Datanucleus JDO/JPA version 2 and local HRD is enabled
+
+- Increase the number of extensions supported by changing `/war/home/index.html`
+
+
+
+
+

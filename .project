@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Sample Template</name>
+	<name>Hoiio Company Directory</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -21,6 +21,11 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+			<name>com.google.appengine.eclipse.core.enhancerbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>com.google.appengine.eclipse.core.gaeProjectChangeNotifier</name>
 			<arguments>
 			</arguments>
@@ -30,15 +35,10 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>com.google.appengine.eclipse.core.enhancerbuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>com.google.appengine.eclipse.core.gaeNature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
+		<nature>com.google.appengine.eclipse.core.gaeNature</nature>
 	</natures>
 </projectDescription>
