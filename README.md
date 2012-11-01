@@ -3,11 +3,10 @@ Company Directory
 
 Company directory is a telephony application that let callers connect to company phones by keying an extension.
 
-Requirements
--------------
+It requires:
 
-- [Google App Engine (Java)](https://developers.google.com/appengine/docs/java/)
-- [Hoiio Developer Account](http://developer.hoiio.com/)
+- [Google App Engine (Java)](https://developers.google.com/appengine/docs/java/) - as a web server
+- [Hoiio Developer Account](http://developer.hoiio.com/) - for telephony IVR API
 
 
 Setup GAE
@@ -15,7 +14,7 @@ Setup GAE
 
 Setup GAE Java SDK and Eclipse Plugin by following this [Google guide](https://developers.google.com/appengine/docs/java/gettingstarted/installing).
 
-Setup a new GAE application from [http://appspot.com](http://appspot.com). Thanks to Google, it's free to setup a web app on their cloud, and probably free for serving this lightweight app. 
+Create a new GAE application from [http://appspot.com](http://appspot.com). Thanks to Google, it's free to setup a web app on their cloud, and probably free for serving this lightweight app. 
 
 Note down the `Appspot Identifier` that you specify when setting up your GAE application.
 
@@ -29,7 +28,7 @@ With an account, login to Hoiio, create an app and note down your `Hoiio App ID`
 
 Then go to Numbers and purchase a number of your choice.
 
-Configure the number and change the Voice Notify URL to http://your-appspot-identifier.appspot.com/in/answer. Replace with your `Appspot Identifier`.
+Configure the number, and change **Voice Notify URL** to http://your-appspot-identifier.appspot.com/in/answer. Replace with your `Appspot Identifier`.
 
 Note: A free Hoiio account has trial restrictions. You would need to top up Hoiio credits to lift the trial.
 
@@ -49,7 +48,7 @@ In `/src/com/hoiio/api/extensions/persistence/Configuration.java`
 
 - Replace `appId` and `accessToken` with yours
 - Replace `appSpotUrl` with yours 
-- Change the number of digits that each extension has
+- Change the number of digits that each extension has (Optional)
 
 In `/war/WEB-INF/appengine-web.xml`
 
@@ -71,3 +70,5 @@ You have to login with the Google Account that created the GAE app. That Google 
 After logging in, use the interface to map your company extensions to phone numbers. 
 
 Test out by calling your Hoiio Number!
+
+![Configure Company Directory](https://github.com/Hoiio/company-directory/tree/master/war/screenshot.png)
