@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+<title>Hoiio Extension Template</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<meta name="description" content="Hoiio API Extension Template">
+<meta name="author" content="Ruprecht Robertson">
+<link href="../resources/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container" style="margin:auto; width: 290px;">
+  <br/><br/>
+
+  <h3>Welcome, Hoiio Developer!</span></h3>
+  configure your extensions via this simple app.
+  <hr/>
+
+  <h3>My Extensions</h3>
+  <div id="extensions"></div>
+  <div class="alert alert-warning" id="status" style="text-align:center"></div>
+  <div class="form-actions" style="text-align:center">
+    <button type="button" class="btn btn-primary" onclick="Hoiio.saveAndUpdateExtensions()">Update Configuration</button> 
+  </div>
+
+
+</div>
+
+
+
+<!-- JS Resources should be loaded last -->
+<script src="../resources/jquery1.7.2.js"></script>
+<script src="../resources/bootstrap-modal.js"></script>
+<script src="../resources/bootstrap.js"></script>
+<script src="../resources/hoiio.js"></script>
+<script>
+$(document).ready(function() {
+  Hoiio.setNumberOnlyFields();
+  Hoiio.fetchAndPopulateExtensions(5);
+});
+</script>
+
+</body>
+</html>
